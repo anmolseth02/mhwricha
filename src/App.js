@@ -207,7 +207,7 @@ function App() {
             <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
               <NavPills
                 alignCenter
-                color="primary" 
+                color="primary"
                 tabs={[
                   {
                     tabButton: "Instagram",
@@ -277,44 +277,7 @@ function App() {
                         </GridItem>
                       </GridContainer>
                     ),
-                  },
-                  {
-                    tabButton: "Testimonies",
-                    tabIcon: Favorite,
-                    tabContent: (
-                      <GridContainer justify="center">
-                        <GridItem xs={12} sm={12} md={4}>
-                          <img
-                            alt="..."
-                            src={work4}
-                            className={navImageClasses}
-                          />
-                          <img
-                            alt="..."
-                            src={studio3}
-                            className={navImageClasses}
-                          />
-                        </GridItem>
-                        <GridItem xs={12} sm={12} md={4}>
-                          <img
-                            alt="..."
-                            src={work2}
-                            className={navImageClasses}
-                          />
-                          <img
-                            alt="..."
-                            src={work1}
-                            className={navImageClasses}
-                          />
-                          <img
-                            alt="..."
-                            src={studio1}
-                            className={navImageClasses}
-                          />
-                        </GridItem>
-                      </GridContainer>
-                    ),
-                  },
+                  }
                 ]}
               />
             </GridItem>
