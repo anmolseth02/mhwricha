@@ -26,6 +26,7 @@ import {
   transition,
   boxShadow,
   drawerWidth,
+  tealColor,
 } from "../../materialKit/material-kit-react";
 
 const styles = {
@@ -119,6 +120,12 @@ const styles = {
     color: "#FFFFFF",
     boxShadow:
       "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(233, 30, 99, 0.46)",
+  },
+  teal: {
+    backgroundColor: tealColor,
+    color: "#FFFFFF",
+    boxShadow:
+    "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)",
   },
   transparent: {
     backgroundColor: "transparent !important",

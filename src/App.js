@@ -155,7 +155,7 @@ function App() {
       fixed
       changeColorOnScroll={{
         height: 200,
-        color: "white",
+        color: "teal",
       }}
     />
     <Parallax
