@@ -10,7 +10,8 @@ import GridItem from "./components/Grid/GridItem";
 import profile from "./images/RmFace.jpg";
 import Button from "./components/CustomButtons/Button";
 import NavPills from './components/NavPills/NavPills';
-import Camera from "@material-ui/icons/Camera";
+import InstagramIcon from '@material-ui/icons/Instagram';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 import Footer from "./components/Footer/Footer";
 import WorkSection from './components/WorkSection';
 import { Link } from '@material-ui/core';
@@ -135,6 +136,7 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
+
 function App() {
   const classes = useStyles();
 
@@ -165,7 +167,7 @@ function App() {
     />
     <div className={classNames(classes.main, classes.mainRaised)}>
       <div>
-        <div className={classes.container}>
+        <div className={classes.container} style = {{width : "75%"}}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
@@ -201,15 +203,15 @@ function App() {
             An experienced and licensed consultant Clinical Psychologist with a demonstrated history of working in Government and Private hospitals & Clinics. Skilled in Cognitive Behavioral Therapy (CBT), Dialectical Behaviour Therapy (DBT), Family Therapy, Psychodynamic psychotherapy and Neuropsychology with a wide range of expertise in Psychological Assessment and Management of Adult and Childhood mental health problems such as Depression, Anxiety, Insomnia, OCD, Panic Disorder, Intellectual Disability, Learning Disability, Autism etc. Academic achievements include a Gold Medalist in both Masters In Psychoanalytic Psychotherapy and M.Phil in Clinical Psychology (RCI licensed), Qualification in the competitive National Eligibility Test (NET) in Psychology and Author of various research publications.{" "}
             </p>
           </div>
-          {/* <GridContainer justify="center">
+          <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
               <NavPills
                 alignCenter
-                color="primary"
+                color="primary" 
                 tabs={[
                   {
                     tabButton: "Instagram",
-                    tabIcon: Camera,
+                    tabIcon: InstagramIcon,
                     tabContent: (
                       <GridContainer justify="center">
                         <GridItem xs={12} sm={12} md={4}>
@@ -241,7 +243,7 @@ function App() {
                   },
                   {
                     tabButton: "Youtube",
-                    tabIcon: Palette,
+                    tabIcon: YouTubeIcon,
                     tabContent: (
                       <GridContainer justify="center">
                         <GridItem xs={12} sm={12} md={4}>
@@ -316,7 +318,7 @@ function App() {
                 ]}
               />
             </GridItem>
-          </GridContainer> */}
+          </GridContainer>
         </div>
       </div>
       <div className={classes.container}>

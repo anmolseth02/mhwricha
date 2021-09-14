@@ -41,7 +41,7 @@ const useStyles = makeStyles(styles);
 export default function WorkSection() {
   const classes = useStyles();
   return (
-    <div className={classes.section}>
+    <div className={classes.section} style = {{width : "80%"}}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
           <h2 className={classes.title}>Get in touch</h2>
@@ -81,7 +81,7 @@ export default function WorkSection() {
                 }}
               />
               <GridItem xs={12} sm={12} md={4}>
-                <Button color="primary">Send Message</Button>
+                <Button style = {{width : "80%",backgroundColor: "#d99182"}} >Send Message</Button>
               </GridItem>
             </GridContainer>
           </form>

@@ -140,9 +140,7 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
       <Button
-          href="https://mentalhealthwithricha.com/"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
            About Me
@@ -150,9 +148,7 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://mentalhealthwithricha.com/"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
           Get in touch
