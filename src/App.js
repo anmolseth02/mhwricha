@@ -7,11 +7,13 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "./components/Grid/GridContainer";
 import GridItem from "./components/Grid/GridItem";
-import profile from "./images/christian.jpg";
+import profile from "./images/RmFace.jpg";
 import Button from "./components/CustomButtons/Button";
 import NavPills from './components/NavPills/NavPills';
 import Camera from "@material-ui/icons/Camera";
-import Footer from "./components/Footer/Footer"
+import Footer from "./components/Footer/Footer";
+import WorkSection from './components/WorkSection';
+import { Link } from '@material-ui/core';
 
 
 import studio1 from "./images/examples/studio-1.jpg";
@@ -27,6 +29,7 @@ import work5 from "./images/examples/clem-onojegaw.jpg";
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
 
+import { Grid, TextField, Card, CardContent, Typography } from '@material-ui/core';
 
 
 
@@ -147,7 +150,7 @@ function App() {
     <div>
     <Header
       color="transparent"
-      brand="Material Kit React"
+      brand="Mental Health With Richa"
       rightLinks={<HeaderLinks />}
       fixed
       changeColorOnScroll={{
@@ -170,37 +173,42 @@ function App() {
                   <img src={profile} alt="..." className={imageClasses} />
                 </div>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>Christian Louboutin</h3>
-                  <h6>DESIGNER</h6>
-                  <Button justIcon link className={classes.margin5}>
-                    <i className={"fab fa-twitter"} />
+                  <h2 className={classes.title}>Dr Richa Mehta</h2>
+                  <h5>Consultant Clinical Psychologist</h5>
+          
+                  <Button justIcon link className={classes.margin5} >
+                  <Link href = "https://www.youtube.com/channel/UCQQJiQHSnb4PaNL2JAZO64g/" target="_blank">
+                  <i className={"fab fa-youtube"} />
+                  </Link>
                   </Button>
                   <Button justIcon link className={classes.margin5}>
-                    <i className={"fab fa-instagram"} />
+                  <Link href = "https://www.instagram.com/mentalhealthwithricha/" target="_blank">
+                  <i className={"fab fa-instagram"} />
+                  </Link>
                   </Button>
                   <Button justIcon link className={classes.margin5}>
-                    <i className={"fab fa-facebook"} />
+                  <Link href = "https://www.facebook.com/MentalHealthwithRicha" target="_blank">
+                  <i className={"fab fa-facebook"} />
+                  </Link>
                   </Button>
                 </div>
               </div>
             </GridItem>
           </GridContainer>
           <div className={classes.description}>
+          <h3 className={classes.title}>About Me</h3>
             <p>
-              An artist of considerable range, Chet Faker — the name taken by
-              Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-              and records all of his own music, giving it a warm, intimate
-              feel with a solid groove structure.{" "}
+            An experienced and licensed consultant Clinical Psychologist with a demonstrated history of working in Government and Private hospitals & Clinics. Skilled in Cognitive Behavioral Therapy (CBT), Dialectical Behaviour Therapy (DBT), Family Therapy, Psychodynamic psychotherapy and Neuropsychology with a wide range of expertise in Psychological Assessment and Management of Adult and Childhood mental health problems such as Depression, Anxiety, Insomnia, OCD, Panic Disorder, Intellectual Disability, Learning Disability, Autism etc. Academic achievements include a Gold Medalist in both Masters In Psychoanalytic Psychotherapy and M.Phil in Clinical Psychology (RCI licensed), Qualification in the competitive National Eligibility Test (NET) in Psychology and Author of various research publications.{" "}
             </p>
           </div>
-          <GridContainer justify="center">
+          {/* <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
               <NavPills
                 alignCenter
                 color="primary"
                 tabs={[
                   {
-                    tabButton: "Studio",
+                    tabButton: "Instagram",
                     tabIcon: Camera,
                     tabContent: (
                       <GridContainer justify="center">
@@ -232,7 +240,7 @@ function App() {
                     ),
                   },
                   {
-                    tabButton: "Work",
+                    tabButton: "Youtube",
                     tabIcon: Palette,
                     tabContent: (
                       <GridContainer justify="center">
@@ -269,7 +277,7 @@ function App() {
                     ),
                   },
                   {
-                    tabButton: "Favorite",
+                    tabButton: "Testimonies",
                     tabIcon: Favorite,
                     tabContent: (
                       <GridContainer justify="center">
@@ -308,10 +316,13 @@ function App() {
                 ]}
               />
             </GridItem>
-          </GridContainer>
+          </GridContainer> */}
         </div>
       </div>
-    </div>
+      <div className={classes.container}>
+          <WorkSection />
+        </div>
+      </div>
     <Footer />
   </div>
   );
