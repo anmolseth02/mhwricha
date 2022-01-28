@@ -81,7 +81,7 @@ export default function WorkSection() {
                 }}
               />
               <GridItem xs={12} sm={12} md={4}>
-                <Button style = {{width : "80%",backgroundColor: "#d99182"}} >Send Message</Button>
+                <Button style = {{backgroundColor: "#d99182"}} >Send Message</Button>
               </GridItem>
             </GridContainer>
           </form>

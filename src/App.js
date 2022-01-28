@@ -282,11 +282,13 @@ function App() {
               />
             </GridItem>
           </GridContainer>
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
+              <WorkSection></WorkSection>
+            </GridItem>
+          </GridContainer>
         </div>
       </div>
-      <div className={classes.container}>
-          <WorkSection />
-        </div>
       </div>
     <Footer />
   </div>
